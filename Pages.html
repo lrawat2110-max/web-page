@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexcent Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="logo.png" width="30px">
+        <span>Nexcent</span>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+        ☰
+    </div>
+
+    <ul class="nav-links">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Feature</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">FAQ</a></li>
+    </ul>
+
+    <div class="auth-buttons">
+        <a class="login" href="#">Login</a>
+        <a class="signup" href="#">Sign up</a>
+    </div>
+</nav>
+
+<script>
+    const mobileMenu = document.getElementById("mobile-menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    mobileMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Lessons and insights <br> <span>from 8 years</span></h1>
+    <p>Where to grow your business as a photographer: site or social media?</p>
+
+    <button class="btn">Register</button>
+  </div>
+
+  <div class="hero-image">
+    <img src="llustration.png" alt="Illustration" width="400px">
+    <!-- Replace with your image path -->
+  </div>
+</section>
+
+</body>
+</html>
